@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>ipad</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="login" class="hidden">
+            <p id="clock">
+                <span class="time"></span>
+                <span class="date"></span>
+            </p>
+            <form id="loginForm" action="#" method="POST">
+                <fieldset>
+                    <legend>로그인</legend>
+                    <div class="login">
+                        <h2>로그인</h2>
+                        <input id="userid" type="text" maxlength="10" placeholder="사용자의 ID" required/>
+                    </div>
+                    <p class="next">
+                        <input id="nextBtn" type="submit" value="다음"/>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <div id="home" class="hidden">
+            <div id="statusBar">
+                <p class="leftBar">
+                    <span class="time"></span>
+                    <span class="date"></span>
+                    <span class="test"></span>
+                </p>
+                <p class="rightBar">
+                    <span class="wifi">
+                        <img src="img/icon/wifi_icon.png" alt="wifi 이미지"/>
+                    </span>
+                    <span class="battery">100%</span>
+                </p>
+            </div>
+            <div id="apps">
+                <ul>
+                    <li>
+                        <a href="#none" title="카카오톡">
+                            <img src="img/app/kakaotalk.jpg" alt="카카오톡"/>
+                        </a>
+                        <span class="appName">카카오톡</span>
+                    </li>
+                    <li>
+                        <a href="#none" title="줌">
+                            <img src="img/app/zoom.jpg" alt="줌"/>
+                        </a>
+                        <span class="appName">Zoom</span>
+                    </li>
+                    <li>
+                        <a href="#none" title="트위터">
+                            <img src="img/app/twitter.jpg" alt="트위터"/>
+                        </a>
+                        <span class="appName">트위터</span>
+                    </li>
+                    <li class="clockWidget">
+                        <span class="title">시계</span>
+                        <span>추가중..</span>
+                    </li>
+                    <li class="weatherWidget">
+                        <span class="title">날씨</span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li class="memoWidget">
+                        <span class="title">메모</span>
+                        <span>추가중..</span>
+                    </li>
+                    <li class="reminderWidget">
+                        <span class="title">리마인더</span>
+                        <form id="todoForm">
+                            <input type="text" placeholder="할 일을 입력하세요" required/>
+                        </form>
+                        <ul id="todoList">
+                        </ul>
+                    </li>
+                    <li class="musicWidget">
+                        <span class="title">음악</span>
+                        <span>추가중..</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="dock">
+                <ul>
+                    <li>
+                        <a href="#none" title="시계">
+                            <img src="img/app/clock.jpg" alt="시계"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none" title="날씨">
+                            <img src="img/app/weather.jpg" alt="날씨"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none" title="메모">
+                            <img src="img/app/memo.jpg" alt="메모"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none" title="미리 알림">
+                            <img src="img/app/reminders.jpg" alt="미리 알림"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none" title="음악">
+                            <img src="img/app/apple_music.jpg" alt="음악"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
